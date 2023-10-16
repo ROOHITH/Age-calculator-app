@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./main.css"type="text/css">
+</head>
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  
+
+  <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <div class="centered-div bg-white p-4">
+      <div class="bg-white padleft padRight container">
+        <div class="col padleft d-flex rowwidth ">
+          <div class="padleft col-4"> 
+            <label class="dateLable"for="day">Day</label>
+            <input type="number" class="form-control date" id="day" name="day" placeholder="DD" min="1" max="31" required>
+            <div class="error" id="dayError">Must be valid day</div>
+          </div>
+          
+            <div class="col-4">  
+            <label class="dateLable"for="month">Month</label>
+            <input type="number" class="form-control date" id="month" name="month" placeholder="MM" min="1" max="12" required>
+            <div class="error" id="monthError">Must be valid month</div>
+          </div>
+          
+            <div class="col-4"> 
+            <label class="dateLable"for="year">Year</label>
+            <input type="number" class="form-control date" id="year" name="year" placeholder="YYYY" min="1900" max="2023" required>
+            <div class="error" id="yearError">Must be valid year</div>
+          </div>
+        </div>
+      </div>
+        <div class="col-12 width d-flex p-0">
+          <div class="col-md-11 p-0  ">
+            <hr class="horizontal-line">
+            <span class="arrowBg"id="validateForm"> <img src="./assets/images/icon-arrow.svg" alt=""></span>
+          </div>
+        </div>
+        <div class="padleft col-12 container">
+          <div class="padleft col-12">
+            <span class="ages digit1 d1y">- -</span>
+          
+            <span class="ages yearsL">years</span>
+          </div>
+          <div class="padleft col-12">
+            <span class="ages digit1 d1m">- -</span>
+           
+            <span class="ages monthL">months</span>
+          </div>
+          <div class="padleft col-12">
+            <span class="ages digit1 d1d">- -</span>
+           
+            <span class="ages daysL">days</span>
+          </div>
+        </div>
+       
+    </div>
+</div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Rohith R</a>.
+  </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+
+    <script src="./jsfile.js"></script>
+</html>

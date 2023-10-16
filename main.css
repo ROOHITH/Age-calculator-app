@@ -1,0 +1,120 @@
+/* ## Colors */
+/* 
+### Primary */
+:root {
+  --Purple: hsl(259, 100%, 65%);
+  --Light-red: hsl(0, 100%, 67%);
+  --White: hsl(0, 0%, 100%);
+  --Off-white: hsl(0, 0%, 94%);
+  --Light-grey: hsl(0, 0%, 86%);
+  --Smokey-grey: hsl(0, 1%, 44%);
+  --OffCopy-black: hsl(0, 0%, 8%);
+  --Font-size: 32px;
+  --Family-Poppins: ("https://fonts.google.com/specimen/Poppins");
+  --Weights: 400px, 700px, 800px;
+}
+
+/* 
+### Neutral */
+
+/* ## Typography */
+
+/* ### Body  */
+
+/* ### Font */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--Family-Poppins);
+}
+html,
+body {
+  background: #f0f0f0;
+}
+.centered-div {
+  content: "";
+  min-width: 300px;
+  background: var(--White);
+  border-radius: 10px 10px 100px 10px;
+}
+.dateLable {
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.date {
+  padding: 15px;
+}
+.date::placeholder {
+  font-size: 16px; /* Adjust the font size as needed */
+  font-weight: bold;
+}
+
+.arrowBg {
+  background: var(--Purple);
+
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+
+  text-align: center;
+  padding: 6px;
+  position: relative;
+  left: 85px;
+
+  display: flex; /* Use flex to center the content vertically and horizontally */
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 645px;
+  top: -34px;
+  cursor: pointer;
+}
+
+.horizontal-line {
+  border: none;
+  border-top: 1px solid #a3a1a1; /* Adjust the line color as needed */
+  width: 100%; /* Full-width horizontal line */
+  margin: 0; /* Remove default margin */
+}
+.arrowBg img {
+  align-self: center;
+  height: 37px;
+}
+.horizontal-line {
+  margin-top: 2rem !important;
+}
+
+.rowwidth {
+  width: 650px !important;
+}
+.padRight {
+  padding-right: 6rem !important;
+}
+.ages {
+  font-weight: 800;
+  font-style: italic;
+
+  font-size: 80px; /* Increase font size */
+}
+.error {
+  font-style: italic;
+  color: red;
+}
+.whenerror {
+  color: red;
+  border: 1px solid red;
+}
+.width {
+  height: 30px !important;
+}
+.padleft {
+  padding-left: 0px !important;
+}
+.digit2,
+.digit1 {
+  color: var(--Purple);
+  font-style: italic;
+}
